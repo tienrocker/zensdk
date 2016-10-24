@@ -13,7 +13,7 @@
     "paragraph1/php-fcm": "^0.7.0"
   },
   "autoload": {
-    "psr-0": {
+    "psr-4": {
       "tienrocker\\zensdk": "src"
     }
   }
