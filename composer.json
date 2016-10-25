@@ -14,7 +14,7 @@
   },
   "autoload": {
     "psr-4": {
-      "tienrocker\\zensdk": "src"
+      "tienrocker\\zensdk\\": "src"
     }
   }
 }
