@@ -31,10 +31,6 @@ class Constant
 
     public $ServerApp;
     public $ServerIdGraph;
-    public $DomainBillingGraph;
-    public $DomainMobileBillingGraph;
-    public $DomainPaymentGraph;
-    public $DomainGeneralGraph;
     public $ServerBilling;
     public $ServerProfile;
     public $Mode;
@@ -49,10 +45,6 @@ class Constant
     {
         $this->ServerApp = $configs['server_app'];
         $this->ServerIdGraph = $configs['id_graph'];
-        $this->DomainBillingGraph = $configs['billing_graph'];
-        $this->DomainMobileBillingGraph = $configs['domain_mobile_billing_graph'];
-        $this->DomainPaymentGraph = $configs['payment_graph'];
-        $this->DomainGeneralGraph = $configs['general_graph'];
         $this->ServerBilling = $configs['id_billing'];
         $this->ServerProfile = $configs['server_profile'];
         $this->Mode = $configs['mode'];
