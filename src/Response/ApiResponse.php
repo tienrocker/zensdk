@@ -39,6 +39,6 @@ class ApiResponse
      */
     public function __construct($data)
     {
-        foreach ($data AS $key => $value) $this->{$key} = $value;
+        if (is_array($data)) foreach ($data AS $key => $value) $this->{$key} = $value;
     }
 }

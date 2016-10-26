@@ -29,6 +29,7 @@ class SdkClient
     {
         $callback_url = empty($callback_url) ? 'callback.php?task=login' : $callback_url;
         $callback_url = $this->constant->ServerApp . $callback_url;
+        //die(sprintf($this->constant->RequestTokenUrlFormat, $this->constant->ServerIdGraph, $this->constant->ClientKey, $callback_url, $this->constant->Mode, $callback_url));
         return sprintf($this->constant->RequestTokenUrlFormat, $this->constant->ServerIdGraph, $this->constant->ClientKey, $callback_url, $this->constant->Mode, $callback_url);
     }
 
@@ -53,6 +54,14 @@ class SdkClient
         $callback_url = empty($callback_url) ? 'callback.php?task=logout' : $callback_url;
         $callback_url = $this->constant->ServerApp . $callback_url;
         return sprintf($this->constant->LogoutUrlFormat, $this->constant->ServerIdGraph, $access_token, $callback_url);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function GetProfileUrl()
+    {
+        return $this->constant->ServerProfile;
     }
 
     /**
